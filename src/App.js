@@ -1,7 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
 
-function App() {
+export const App = () => {
+  const currentYear = new Date()
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        <p>{currentYear.getFullYear()}</p>
       </header>
     </div>
-  );
+  )
 }
-
-export default App;
